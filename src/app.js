@@ -3,6 +3,7 @@ let score = 0;
 let foodCellList = [];
 let foodCellEaten = [];
 let killCellList = [];
+let setIntervalID = null;
 const foodCount = 10;
 const axisY = 10;
 const axisX = 10;
@@ -39,6 +40,7 @@ const clearGameValues = () => {
   foodCellList = [];
   killCellList = [];
   score = 0;
+  window.clearInterval(setIntervalID);
 };
 
 const restartGame = (message) => {
@@ -71,7 +73,7 @@ const buildGrid = () => {
   elementMain.append(gridElement);
   createRandomFood();
   setActiveCell(activeCellId);
-  window.setInterval(() => kill(), 900);
+  setIntervalID = window.setInterval(() => kill(), 900);
 };
 
 // Actions
