@@ -1,0 +1,14 @@
+{
+  "name": "eatbeforekillyou",
+  "version": "1.0.0",
+  "description": "Javascript game with typescript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "kath_code",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^4.1.3"
+  }
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game</title>
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+  <body>
+    <main class="main">
+      <section>
+        <p>Score: <span class="score">0</span></p>
+        <button onclick="buildGrid()">Start Game</button>
+        <button onclick="restartGame('Game restarted')">Restart Game</button>
+      </section>
+      <section>
+        <p>Instructions</p>
+        <ol>
+          <li>Eat the apples before the bug got you</li>
+          <li>Move with the arrows</li>
+          <li>If you touch a bug you lose</li>
+        </ol>
+      </section>
+    </main>
+    <script src="src/app.js"></script>
+  </body>
+</html>
