@@ -35,10 +35,15 @@ const removeClass = (element, classToReplace, newClass) => {
   element.classList.replace(classToReplace, newClass);
 };
 
-const restartGame = (message) => {
-  window.document.querySelector('.grid').remove();
+const clearGameValues = () => {
   foodCellList = [];
   killCellList = [];
+  score = 0;
+};
+
+const restartGame = (message) => {
+  window.document.querySelector('.grid').remove();
+  clearGameValues();
   buildGrid();
   alert(message);
 };
@@ -56,6 +61,7 @@ const createGridElement = () => {
 
 // Init
 const buildGrid = () => {
+  clearGameValues();
   const gridElement = createGridElement();
 
   for (let index = 1; index <= axisY * axisX; index++) {

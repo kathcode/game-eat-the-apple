@@ -1,3 +1,12 @@
+.main {
+  display: flex;
+  justify-content: space-around;
+}
+
+.score {
+  font-size: 5rem;
+}
+
 .grid {
   border: 1px solid gray;
   width: 500px;
